@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knjižara Moljević 52 - Knjige</title>
+    <link rel="icon" type="image/x-icon" href="slike/generalno/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav navigacija">
+        <div class="brend animacija">Knjižara Moljević </div>
+        <ul class="navbar animacija">
+            <li>
+                <a href="index.html">
+                    Početna
+                </a>
+            </li>
+            <li>
+                <a href="pribor.html">
+                    Pribor
+                </a>
+            </li>
+            <li>
+                <a href="knjige.html">
+                    Knjige
+                </a>
+            </li>
+
+            <li>
+                <a href="kontakt.html">
+                    Kontakt
+                </a>
+            </li>
+            <li>
+                <a href="pomoc.html">
+                    Pomoć
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="omotac">
+
+        <h1 class="glavni-naslov-stranice">Knjige</h1>
+        
+        <div class="sve-knjige">
+            <div class="omotac-korpe">
+                <h3 class="naslov-korpe">Korpa</h3>
+                <button style="float: right; display: none;" id="obrisiSveKorpuBtn">Obriši sve iz korpe</button>
+                <div class="korpa" id="korpaLista">
+                    
+                </div>
+                
+            </div>
+            <h3 class="najcitaniji">Od knjiga izdvajamo, neke od najčitanijih:</h3>
+            <div class="knjige">
+
+                <div class="knjiga">
+                    <h3>Zona Zamfirova</h3>
+                    <p>Stevan Sremac</p>
+                    <img src="slike/knjige/sremac.png" alt="" width="300">
+                    <blockquote><strong><em>700 RSD</em></strong></blockquote>
+                    <p>Ljubavna priča uz koju sazrevaju generacije.<br> <br> Zona Zamfirova je knjiga uz koju odrastaju generacije. Koja je tajna njene popularnosti? Zašto se i sto godina posle prvog izdanja priređuju pozorišne predstave, televizijske serije, igrani filmovi i mjuzikli i zašto su po pravilu hitovi svog vremena? Kako iz jedne konvencionalne fabule o dvoje mladih, razdvojenih staleškim razlikama, koji posle mnogobrojnih ljubavnih trzavica nalaze mir u bračnoj luci, nastalo je opšteprihvaćeno, nacionalno delo? Zato što delo ne čini tema nego način na koji je interpretirana.A priča o Zoni, bogatoj mezimici ćerki.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Zona Zamfirova" data-cena="700 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Zona Zamfirova">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Derviš i smrt</h3>
+                    <p>Meša Selimović</p>
+                    <img src="slike/knjige/Mesa.jpg" alt="" width="300">
+                    <blockquote><strong><em>450 RSD</em></strong></blockquote>
+                    <p>Derviš i smrt obrađena lektira Meše Selimovića. Lektira sadrži detaljan kratak sadržaj, analizu djela, književne elemente, analizu likova i bilješku o piscu, sve potrebno za kvalitetnu obradu i aktivno sudjelovanje u nastavi.Derviš i smrt po vrsti je psihološki i filozofski roman, pun introspekcija glavnog lika, kojima on traži smisao života. Roman se sastoji od šesnaest poglavlja, a podijeljen je na dva dijela – prvi dio romana sastoji se od devet poglavlja, a drugi od preostalih sedam poglavlja. Svako poglavlje započinje ajetom – ulomkom iz Kurana, koji najavljuje temu poglavlja, a zadnje poglavlje započinje istim ajetom kao i prvo poglavlje, čime se ostvaruje ciklička struktura romana, gdje je završetak ujedno i početak.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Derviš i smrt" data-cena="450 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Derviš i smrt">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Znakovi pored puta</h3>
+                    <p>Ivo Andrić</p>
+                    <img src="slike/knjige/znakovi.jpg" alt="" width="300">
+                    <blockquote><strong><em>1250 RSD</em></strong></blockquote>
+                    <p>
+                        Neiscrpno vrelo mudrosti, „Znakovi pored puta“ već skoro pola veka omiljeno su štivo mnogih generacija, knjiga koja se sa podjednakim uživanjem može čitati gde god se otvori, riznica najraznolikijih saveta, zapažanja i životnih uvida koje je ovaj pisac upućivao ne samo čitaocima nego i samome sebi.<br>Posebna vrednost ovog Laguninog izdanja su prevodi pojedinih izreka i citata stranih pisaca koje je Andrić u originalu na nemačkom, latinskom, francuskom i dr. jezicima unosio u svoju fasciklu, a koje u dosadašnjim izdanjima ovog osobenog dela nisu prevedeni.<br>Ovo luksuzno izdanje štampano je u tvrdom povezu, sa koricama od kože.
+                    </p>
+                    <button class="dodajUKorpuBtn" data-naslov="Znakovi pored puta" data-cena="1250 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Znakovi pored puta">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Na Drini ćuprija</h3>
+                    <p>Ivo Andrić</p>
+                    <img src="slike/knjige/andric.jpg" alt="" width="300">
+                    <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                    <p>Najpoznatiji roman Ive Andrića, Na Drini ćurpija (1945), hronološki prati četiri veka zbivanja oko velikog mosta preko reke Drine u Višegradu, koji je izgradio veliki vezir Mehmed paša Sokolović, poreklom iz tih krajeva. <br>
+                        Godine 1516. Mehmed paša je, prema vladajućem običaju uzimanja danka u krvi, kao srpski dečak na silu odveden u tursku vojsku i poturčen da bi se kasnije uzdigao lestvicama vlasti i postao prvi do sultana. Kao moćnik, odlučio je da u rodnom kraju podigne zadužbinu, veliki kameni most na jedanaest lukova.
+                    </p>
+                    <button class="dodajUKorpuBtn" data-naslov="Na Drini ćuprija" data-cena="1550 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Na Drini ćuprija">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Izabrane pesme</h3>
+                    <p>Desanka Maksimović</p>
+                    <img src="slike/knjige/desanka.jpg" alt="" width="300">
+                    <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                    <p>Književni časopis „Misao” 1920. godine širom je otvorio vrata pesmama mlade Desanke Maksimović, koje su nesvakidašnje neposredno i razumljivo progovarale o prirodi, ljubavi, neizgovorenim čežnjama. Danas, u kontekstu srpske književnosti XX veka, pesničko delo Desanke Maksimović zauzima neprikosnoveno mesto.Desanka Maksimović bila je i pesnikinja rodoljubivog osećanja, filozofskih refleksija, istrajne misaonosti i etosa slobode, dobrote, hrabrosti i odanosti.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Izabrane pesme" data-cena="1550 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Izabrane pesme">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Orlovi rano lete</h3>
+                    <p>Branko Ćopić</p>
+                    <img src="slike/knjige/copic.jpg" alt="" width="300">
+                    <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                    <p>U bosanskom selu Lipovu odrasta grupa četvrtaka. Kada njihovu dobrodušnu učiteljicu Lanu zameni džangrizavi učitelj Paprika, koji veruje da je batina najbolje sredstvo za vaspitavanje đaka, dečaci, ali i jedna neustrašiva devojčica, odlučuju da se odmetnu i pobegnu u šumu. Tamo ubrzo niče logor Tepsija, u kojem će deca provesti mnoge bezbrižne dane, pune avantura. Međutim, počinje Drugi svetski rat i deca prevremeno odrastaju, shvatajući da se njihova borba protiv nepravde i nasilja nastavlja, ali ovog puta na novom i mnogo ozbiljnijem planu.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Orlovi rano lete" data-cena="1550 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Orlovi rano lete">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+            </div>    
+            <h3>Od stranih knjiga izdvajamo:</h3>
+            <div class="knjige">
+                <div class="knjiga">
+                    <h3>The women</h3>
+                    <p>Kristin Hannah</p>
+                    <img src="slike/knjige/kristin.jpg" alt="" width="300">
+                    <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                    <p>' Žene mogu biti heroji '. Kada dvadesetogodišnja studentkinja medicinskih sestara, Frances "Frankie" McGrath, čuje ove neočekivane reči, to je otkriće. Odrasla na idiličnom kalifornijskom ostrvu Coronado i zaštićena od strane svojih konzervativnih roditelja, uvek se ponosila time što je učinila pravu stvar, što je dobra devojka. Ali 1965. godine svet se menja, a ona odjednom zamišlja drugačiji put za svoj život. Kada njen brat ode da služi u Vijetnamu, ona se impulsivno pridružuje vojnim medicinskim sestrama i prati njegov put.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="The women" data-cena="1550 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="The women">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>First lie wins</h3>
+                    <p>Aeshley Elston</p>
+                    <img src="slike/knjige/ashley.jpg" alt="" width="300">
+                    <blockquote><strong><em>860 RSD</em></strong></blockquote>
+                    <p>Sve što će im reći je laž ... Evie Porter ima sve što devojka može da poželi: dragog dečka, kuću sa ogradom, zabavnu grupu prijatelja. Jedina caka: Evie Porter ne postoji. Prvo dolazi identitet. Jednom kada joj poslodavac da ime i lokaciju, ona sazna sve što treba znati o gradu i ljudima u njemu. Zatim znak: Rajan Sumner. Poslednji deo slagalice je posao. Za Evie, ovaj posao se oseća drugačije. Rajan joj se uvukao pod kožu i počela je da zamišlja drugu vrstu života za sebe - onaj u kojem njen šef ne vuče konce.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="First lie wins" data-cena="860 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="First lie wins">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Serbian Folktales</h3>
+                    <p>J.K. Jackson</p>
+                    <img src="slike/knjige/jackson.jpg" alt="" width="300">
+                    <blockquote><strong><em>860 RSD</em></strong></blockquote>
+                    <p>Priče o srpskom narodu su poetske i oštre, odražavaju njegovo ponosno nasleđe kao južnih Slovena, koji su u godinama nakon pada Zapadnog rimskog carstva zahvatili jug, zauzevši zemlje nekada velikih starih Grka, Latina i Tračana. Njihove narodne priče odjekuju prelepim pejzažom i mešanjem sa klasičnim,  herojska kultura Vizantijaca. Sa novim uvodom ova moćna zbirka okuplja priče kao što su "Onaj ko malo pita dobija mnogo", "Devojka mudrija od cara", "Grizač", "Dobra dela nikada ne propadaju" i "Ovan sa zlatnim runom".</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Serbian Folktales" data-cena="860 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Serbian Folktales">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Oddly Normal</h3>
+                    <p>Otis Frampton</p>
+                    <img src="slike/knjige/frampton.jpg" alt="" width="300">
+                    <blockquote><strong><em>1855 RSD</em></strong></blockquote>
+                    <p>"Tekst sadrži neke sofisticirane vokabulare i književne reference (postoji vampir po imenu Bram, na primer), dok ostaje dostupan. Fignation je bogato zamišljen svet fantastičnih stvorenja. Crteži su zanimljivi i dobro iskoriste ćudljive, zasićene boje. Rekreacija kolekcije Čudno normalne objavljene 2006. godine koja se proširuje na originalnu priču i ponovo je zamišljala presudu ilustracija: Ovo je Framptonova potpuno realizovana vizija za Čudno normalno; vredi dodati u bilo koju kolekciju, čak i one koje već sadrže ranije izdanje."</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Oddly Normal" data-cena="1855 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Oddly Normal">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Rick and Morty</h3>
+                    <p>Pamela Ribon</p>
+                    <img src="slike/knjige/ribon.jpg" alt="" width="300">
+                    <blockquote><strong><em>2200 RSD</em></strong></blockquote>
+                    <p>Hit serija stripova zasnovana na urnebesnoj ™ animiranoj emisiji Rick and Morti™ Dana Harmona i Justina Roilanda nastavlja se u potpuno novim pričama koje se ne vide na TV-u! Nadoknadite avanture degenerisanog genijalnog naučnika Ricka Sancheza dok vuče svog inherentno plašljivog unuka Mortija Smitha na opasne avanture širom univerzuma! Ova knjiga sadrži pisce nominovane za Ajznera Kajla Starksa (Sekcastle) i Magdalene Visaggio (Kim & Kim) u saradnji sa umetnicima serije CJ Cannon i Marc Ellerby, plus gostujući pisci Tini Hovard.</p>
+                    <button class="dodajUKorpuBtn" data-naslov="Rick and Morty" data-cena="2200 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Rick and Morty">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+                <div class="knjiga">
+                    <h3>Attack On Titan: Before The Fall</h3>
+                    <p>Satoshi Shiki </p>
+                    <img src="slike/knjige/shiki.jpg" alt="" width="300">
+                    <blockquote><strong><em>1650 RSD</em></strong></blockquote>
+                    <p>
+                        Čovečanstvo je naučilo da živi u samozadovoljstvu iza svojih visokih zidova, 
+                        zaštićeno od džinovskih Titana. Ali kada kult obožavanja Titana otvori jednu od kapija, 
+                        Titan pravi pustoš, proždirući kultiste. Nakon što se divljanje završi, 
+                        dva mlada člana Istraživačkog korpusa šokirana su kada otkriju delimično probavljeni 
+                        leš trudne žene - sa bebom koja je još uvek živa u njemu!
+                    </p>
+                    <button class="dodajUKorpuBtn" data-naslov="Attack On Titan: Before The Fall" data-cena="1650 RSD">
+                        Dodaj u korpu
+                    </button>
+                    <button class="ukloniIzKorpeBtn" data-naslov="Attack On Titan: Before The Fall">
+                        Ukloni iz korpe
+                    </button>
+                </div>
+            </div>
+            <div class="knjige-overlay"></div>
+        </div>
+        
+
+        <h3>Top preporuke/bestseleri</h3>        
+        <img src="/slike/knjige/listanje-knjige.gif" alt="Čitanje knjige" class="listanje-knjige" width="100">
+
+        <table>
+            <thead>
+                <tr>
+                <th>Naslov djela</th>
+                <th>Autor</th>
+                <th>Žanr</th>
+                <th>Cijena (€)</th>
+                <th>Dostupnost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Na Drini ćuprija</td>
+                <td>Ivo Andrić</td>
+                <td>Istorijski roman</td>
+                <td>12.50</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Prokleta avlija</td>
+                <td>Ivo Andrić</td>
+                <td>Roman</td>
+                <td>10.90</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Ana Karenjina</td>
+                <td>Lav Tolstoj</td>
+                <td>Klasik / Drama</td>
+                <td>14.99</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Rat i mir</td>
+                <td>Lav Tolstoj</td>
+                <td>Ep / Istorijski</td>
+                <td>18.50</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Zločin i kazna</td>
+                <td>Fjodor Dostojevski</td>
+                <td>Roman / Drama</td>
+                <td>13.99</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Braća Karamazovi</td>
+                <td>Fjodor Dostojevski</td>
+                <td>Filozofski roman</td>
+                <td>16.20</td>
+                <td>Naručiti</td>
+                </tr>
+                <tr>
+                <td>Mali princ</td>
+                <td>Antoine de Saint-Exupéry</td>
+                <td>Filozofska bajka</td>
+                <td>9.80</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Distopija</td>
+                <td>11.70</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Životinjska farma</td>
+                <td>George Orwell</td>
+                <td>Satira / Distopija</td>
+                <td>8.90</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Hari Poter i Kamen mudrosti</td>
+                <td>J. K. Rowling</td>
+                <td>Fantastika</td>
+                <td>12.00</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Hari Poter i Dvorana tajni</td>
+                <td>J. K. Rowling</td>
+                <td>Fantastika</td>
+                <td>12.00</td>
+                <td>Na skladištu</td>
+                </tr>
+                <tr>
+                <td>Gospodar prstenova: Prstenova družina</td>
+                <td>J. R. R. Tolkien</td>
+                <td>Fantastika</td>
+                <td>15.50</td>
+                <td>Naručiti</td>
+                </tr>
+            </tbody>
+            </table>
+
+    </div>
+
+    <script>
+        let stranica = "knjige";
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
