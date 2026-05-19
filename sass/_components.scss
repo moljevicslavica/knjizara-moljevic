@@ -1,0 +1,123 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.knjizica {
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+}
+
+.animacija {
+    animation-duration: 2s;
+    animation-name: bounceIn;
+}
+
+.knjige,
+.pribor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.kartica {
+    border: 1px dotted $boja-tamna;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    background-color: $boja-primarna;
+    transition: all 0.3s;
+
+    h3, p {
+        margin-left: 15px;
+    }
+
+    &:hover {
+        @include kartica-hover;
+    }
+}
+
+.slika-kartica {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    background-color: white;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        scale: 1;
+        transition: scale 0.3s;
+    }
+}
+
+.knjiga {
+    width: 300px;
+
+    p {
+        @include skrati-tekst(6);
+    }
+
+    img {
+        max-height: 430px;
+    }
+}
+
+.sve-knjige {
+    height: 80svh;
+    overflow-y: auto;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        pointer-events: none;
+    }
+}
+
+.omotac-korpe {
+    position: sticky;
+    top: 15px;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: #fff;
+    max-width: 80%;
+    left: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        color: $boja-primarna;
+    }
+}
+
+.naslov-korpe {
+    display: inline-block;
+}
+
+#obrisiSveKorpuBtn {
+    margin-top: 18px;
+    float: left;
+}
+
+.listanje-knjige {
+    float: right;
+    margin: 0 auto;
+}
+
+.najcitaniji {
+    padding-top: 20px;
+}

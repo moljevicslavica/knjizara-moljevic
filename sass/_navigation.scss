@@ -1,0 +1,55 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.nav {
+    @include flex(column, center, space-between);
+}
+
+.navbar {
+    @include flex(row, center, center);
+    text-align: center;
+    width: 100%;
+    color: white;
+    list-style: none;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding-left: 0;
+
+    li a {
+        margin-right: 20px;
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 8px 14px;
+        font-family: $font-akaya;
+        transition: $tranzicija;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.navigacija {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: $boja-primarna;
+    flex-direction: row;
+
+    .navbar {
+        width: unset;
+
+        li a:hover {
+            color: $boja-primarna;
+        }
+    }
+}
+
+.brend {
+    font-family: $font-akaya;
+    font-size: 24px;
+    margin-left: 30px;
+    color: white;
+}

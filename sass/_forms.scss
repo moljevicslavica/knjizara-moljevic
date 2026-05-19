@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+input, textarea {
+    border: 0;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-bottom: 1px solid $boja-primarna;
+}
+
+textarea {
+    border: 1px solid $boja-primarna;
+}
+
+button {
+    background-color: white;
+    padding: 10px 17px;
+    color: $boja-primarna;
+    border: 1px solid $boja-primarna;
+    border-radius: 36px;
+    transition: $tranzicija;
+    line-height: 1;
+
+    &:hover {
+        background-color: $boja-primarna;
+        color: black;
+        transform: rotate(360deg);
+    }
+}

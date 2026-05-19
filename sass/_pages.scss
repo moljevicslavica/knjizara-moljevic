@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+.pocetna {
+    width: 100%;
+    height: 100vh;
+    background-image: url('slike/generalno/pozadina.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.glavni-naslov {
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: 300px;
+    font-family: $font-akaya;
+}
+
+.glavni-naslov-stranice {
+    text-align: center;
+    color: $boja-primarna;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: $font-akaya;
+}
+
+.kontakt {
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+
+    @media screen and (min-width: 700px) {
+        flex-direction: row;
+    }
+}
+
+.mapa iframe {
+    width: auto;
+    max-height: 500px;
+}
+
+.kontakt-video {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 24px;
+    margin-top: 32px;
+    overflow: hidden;
+}

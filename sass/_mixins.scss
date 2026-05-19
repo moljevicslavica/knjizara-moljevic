@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+@mixin flex($direction: row, $align: center, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin kartica-hover {
+    box-shadow: 10px 10px 20px $boja-primarna;
+
+    img {
+        scale: 1.1;
+    }
+}
+
+@mixin skrati-tekst($linije: 6) {
+    display: -webkit-box;
+    -webkit-line-clamp: $linije;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
